@@ -1,0 +1,802 @@
+/* Body & Fonts */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #0d0d1a;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+/* Navbar Cosmic Style */
+
+.navbar-cosmic {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.1);
+}
+
+.navbar-cosmic::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(#ffffff11 0.8px, transparent 0.8px);
+    background-size: 30px 30px;
+    opacity: 0.3;
+    z-index: 0;
+}
+
+.navbar .container-fluid {
+    position: relative;
+    z-index: 2;
+}
+
+.navbar-brand {
+    border-radius: 40%;
+    overflow: hidden;
+    color: white;
+    font-size: 1.8rem;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+.nav-link {
+    color: #d9e6ff !important;
+    font-weight: 500;
+    position: relative;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: #00ffe0;
+    transition: width 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+    color: #00ffe0 !important;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.dropdown-menu {
+    background-color: #1b1b2f;
+    border: none;
+}
+
+.dropdown-item {
+    color: #d9e6ff;
+}
+
+.dropdown-item:hover {
+    background-color: #00ffe0;
+    color: #000;
+}
+
+.search-box {
+    position: relative;
+}
+
+.search-box input {
+    background-color: #101020;
+    border: 1px solid #334;
+    color: white;
+    padding-left: 2.5rem;
+}
+
+.search-box input:focus {
+    border-color: #00ffe0;
+    box-shadow: 0 0 5px #00ffe0;
+    background-color: #101020;
+    color: white;
+}
+
+.search-box .fa-search {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #aaa;
+}
+
+.btn-outline-cosmic {
+    border-color: #00ffe0;
+    color: #00ffe0;
+    margin-left: 10px;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-cosmic:hover {
+    background-color: #00ffe0;
+    color: #000;
+}
+
+.navbar-toggler {
+    border-color: #00ffe0;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(0,255,255,0.8)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+
+/* Fade Slideshow Container */
+
+#slideshow {
+    position: relative;
+    width: 100%;
+    max-height: 500px;
+    overflow: hidden;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.8);
+}
+
+.slide.active {
+    opacity: 1;
+    position: relative;
+    z-index: 1;
+}
+
+.slide-caption {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.55);
+    padding: 15px 25px;
+    border-radius: 12px;
+    color: #00ffe0;
+    font-weight: 600;
+    max-width: 90%;
+    text-align: center;
+    box-shadow: 0 0 10px #00ffe0;
+    font-size: 1.5rem;
+}
+
+
+/* Offer Strap */
+
+.bg-offer {
+    background: linear-gradient(90deg, #1f1f2e, #2a3a4b);
+    color: #fff;
+    border-top: 2px solid #00ffe0;
+    border-bottom: 2px solid #00ffe0;
+    box-shadow: 0 0 10px #00ffe077;
+}
+
+
+/* Cards Section */
+
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(0, 255, 255, 0.1);
+    backdrop-filter: blur(6px);
+    color: white;
+    transition: 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 0 10px #00ffe0;
+    transform: translateY(-5px);
+}
+
+.card img {
+    height: 180px;
+    object-fit: cover;
+}
+
+.card-title {
+    color: #00ffe0;
+}
+
+
+/* About Section */
+
+#about {
+    padding: 60px 0;
+}
+
+#about h2 {
+    text-align: center;
+    color: #00ffe0;
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+
+
+/* Alumni Wheel */
+
+.alumni-wheel {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    border-radius: 50%;
+    border: 3px solid #00ffe0;
+    overflow: visible;
+    animation: spin 20s linear infinite;
+}
+
+.alumni-wheel img {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 2px solid #00ffe0;
+    object-fit: cover;
+    box-shadow: 0 0 8px #00ffe0;
+    transition: transform 0.3s ease;
+}
+
+.alumni-wheel img:hover {
+    transform: scale(1.3);
+    z-index: 10;
+    box-shadow: 0 0 20px #00ffe0;
+}
+
+
+/* Position images evenly in circle */
+
+.alumni-wheel img:nth-child(1) {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) translate(0, -130px);
+}
+
+.alumni-wheel img:nth-child(2) {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) translate(92px, -65px);
+}
+
+.alumni-wheel img:nth-child(3) {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) translate(92px, 65px);
+}
+
+.alumni-wheel img:nth-child(4) {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) translate(0, 130px);
+}
+
+.alumni-wheel img:nth-child(5) {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) translate(-92px, 65px);
+}
+
+.alumni-wheel img:nth-child(6) {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) translate(-92px, -65px);
+}
+
+
+/* Reviews */
+
+.reviews {
+    max-width: 600px;
+    margin: auto;
+    font-style: italic;
+    font-size: 1.1rem;
+    color: #c0fefe;
+    position: relative;
+    min-height: 180px;
+}
+
+.review-item {
+    display: none;
+    animation: fadeIn 1s ease forwards;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.review-item.active {
+    display: block;
+}
+
+.review-author {
+    margin-top: 15px;
+    font-weight: 700;
+    color: #00ffe0;
+}
+
+
+/* Animations */
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* About TravelSphere */
+
+#about-travelSphere {
+    background: linear-gradient(135deg, #001f2f, #00334d);
+    padding: 60px 20px;
+    color: #a0fefe;
+}
+
+#about-travelSphere h2 {
+    color: #00ffe0;
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+
+#about-travelSphere p {
+    max-width: 900px;
+    margin: 0 auto 50px;
+    font-size: 1.15rem;
+    line-height: 1.6;
+    text-align: center;
+    text-shadow: 0 0 8px #00ffe0aa;
+}
+
+
+/* Contact Form */
+
+#contact-form {
+    max-width: 700px;
+    margin: 0 auto;
+    background: rgba(0, 255, 224, 0.05);
+    padding: 30px 25px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px #00ffe077;
+}
+
+#contact-form label {
+    font-weight: 600;
+    color: #00ffe0;
+}
+
+#contact-form input,
+#contact-form select,
+#contact-form textarea {
+    background: #0b1b26;
+    border: 1.5px solid #00ffe0;
+    color: white;
+    border-radius: 6px;
+    padding: 10px;
+    transition: border-color 0.3s ease;
+}
+
+#contact-form input:focus,
+#contact-form select:focus,
+#contact-form textarea:focus {
+    border-color: #00ffe0;
+    outline: none;
+    box-shadow: 0 0 8px #00ffe0;
+    background: #0b1b26;
+}
+
+#contact-form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+#contact-form button {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: linear-gradient(90deg, #00ffe0, #00b8b8);
+    border: none;
+    color: #000;
+    padding: 12px 24px;
+    border-radius: 40px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 0 15px #00ffe0;
+    transition: background 0.3s ease;
+}
+
+#contact-form button:hover {
+    background: linear-gradient(90deg, #00b8b8, #00ffe0);
+}
+
+
+/* WhatsApp Chat Button */
+
+#whatsapp-chat {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #25d366;
+    color: white;
+    padding: 15px 18px;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.6);
+    transition: background-color 0.3s ease;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#whatsapp-chat:hover {
+    background-color: #1ebe57;
+}
+
+
+/* Responsive */
+
+@media (max-width: 768px) {
+    .alumni-wheel {
+        width: 250px;
+        height: 250px;
+    }
+    .alumni-wheel img {
+        width: 60px;
+        height: 60px;
+    }
+    .slide-caption {
+        font-size: 1.1rem;
+        bottom: 25px;
+    }
+}
+
+
+/* ================= Signup Page ================= */
+
+
+/* ================= Signup Page ================= */
+
+.signup-container {
+    max-width: 420px;
+    margin: 80px auto;
+    background: rgba(0, 255, 224, 0.05);
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px #00ffe077;
+    text-align: center;
+    backdrop-filter: blur(10px);
+}
+
+.signup-container h2 {
+    color: #00ffe0;
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-shadow: 0 0 8px #00ffe0aa;
+}
+
+.signup-section {
+    margin-top: 25px;
+    text-align: left;
+}
+
+.signup-section h3 {
+    color: #00ffe0;
+    margin-bottom: 12px;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.signup-section form input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border-radius: 8px;
+    border: 1.5px solid #00ffe0;
+    background: #0b1b26;
+    color: white;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.signup-section form input:focus {
+    outline: none;
+    border-color: #00ffe0;
+    box-shadow: 0 0 8px #00ffe0;
+}
+
+
+/* Buttons */
+
+.signup-btn {
+    background: linear-gradient(90deg, #00ffe0, #00b8b8);
+    border: none;
+    color: #000;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 15px;
+    padding: 12px;
+    border-radius: 8px;
+    width: 100%;
+    box-shadow: 0 0 12px #00ffe0;
+    transition: all 0.3s ease;
+}
+
+.signup-btn:hover {
+    background: linear-gradient(90deg, #00b8b8, #00ffe0);
+    transform: translateY(-2px);
+}
+
+
+/* Google Button */
+
+#google-signin {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: #fff;
+    color: #000;
+    border-radius: 8px;
+    padding: 12px;
+    font-weight: 600;
+    margin-top: 15px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    transition: transform 0.2s ease, background 0.3s ease;
+    width: 100%;
+}
+
+#google-signin:hover {
+    transform: scale(1.03);
+    background: #f5f5f5;
+}
+
+
+/* Divider */
+
+.divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 25px 0;
+    color: #a0fefe;
+}
+
+.divider::before,
+.divider::after {
+    content: "";
+    flex: 1;
+    border-bottom: 1px solid #00ffe0;
+}
+
+.divider:not(:empty)::before {
+    margin-right: 0.75em;
+}
+
+.divider:not(:empty)::after {
+    margin-left: 0.75em;
+}
+
+
+/* OTP Section */
+
+#otp-section {
+    display: none;
+    margin-top: 20px;
+}
+
+#otp-section input {
+    margin-bottom: 12px;
+}
+
+.signup-container p {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    color: #a0fefe;
+}
+
+
+/* Chatbot Button */
+
+#chatbot-btn {
+    position: fixed;
+    bottom: 100px;
+    /* above WhatsApp button */
+    right: 30px;
+    background-color: #ff8c00;
+    color: white;
+    padding: 15px 18px;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(255, 140, 0, 0.6);
+    cursor: pointer;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease;
+}
+
+#chatbot-btn:hover {
+    transform: scale(1.1);
+}
+
+
+/* Chatbot Modal */
+
+
+/* Chatbot Button */
+
+#chatbot-btn {
+    position: fixed;
+    bottom: 100px;
+    /* above WhatsApp button */
+    right: 30px;
+    background-color: #ff8c00;
+    color: white;
+    padding: 15px 18px;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(255, 140, 0, 0.6);
+    cursor: pointer;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+#chatbot-btn:hover {
+    transform: scale(1.1);
+    background-color: #e67e00;
+}
+
+
+/* Chatbot Modal */
+
+#chatbot-modal {
+    display: none;
+    position: fixed;
+    bottom: 160px;
+    right: 30px;
+    width: 300px;
+    max-height: 400px;
+    background: rgba(0, 0, 0, 0.95);
+    color: white;
+    border-radius: 12px;
+    box-shadow: 0 0 20px #ff8c00;
+    flex-direction: column;
+    z-index: 1001;
+    overflow: hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+/* Header */
+
+#chatbot-header {
+    background: #ff8c00;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+#chatbot-header span {
+    color: #000;
+}
+
+#chatbot-header button {
+    background: transparent;
+    border: none;
+    color: #000;
+    font-size: 1.2rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+/* Chat body */
+
+#chatbot-body {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 0.9rem;
+}
+
+
+/* Chat messages */
+
+.bot-msg,
+.user-msg {
+    padding: 8px 12px;
+    border-radius: 8px;
+    max-width: 80%;
+    word-wrap: break-word;
+}
+
+.bot-msg {
+    background: #ff8c00;
+    color: #000;
+    align-self: flex-start;
+}
+
+.user-msg {
+    background: #333;
+    color: #fff;
+    align-self: flex-end;
+}
+
+
+/* Input */
+
+#chatbot-input {
+    border: none;
+    padding: 10px;
+    border-top: 1px solid #ff8c00;
+    outline: none;
+    font-size: 0.9rem;
+    width: 100%;
+    box-sizing: border-box;
+    background: #111;
+    color: white;
+}
+
+
+/* Scrollbar for chat body */
+
+#chatbot-body::-webkit-scrollbar {
+    width: 6px;
+}
+
+#chatbot-body::-webkit-scrollbar-thumb {
+    background: #ff8c00;
+    border-radius: 3px;
+}
+
+#chatbot-body::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+
+/* Responsive for small screens */
+
+@media (max-width: 480px) {
+    #chatbot-modal {
+        width: 90%;
+        right: 5%;
+        bottom: 150px;
+    }
+    #chatbot-body {
+        font-size: 0.85rem;
+    }
+    #chatbot-input {
+        font-size: 0.85rem;
+    }
+}

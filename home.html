@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>TravelSphere Cosmic UI</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-cosmic">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">TravelSphere</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCosmic" aria-controls="navbarCosmic" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+            <div class="collapse navbar-collapse" id="navbarCosmic">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" href="home.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Product
+          </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Tours</a></li>
+                            <li><a class="dropdown-item" href="#">Travel</a></li>
+                            <li><a class="dropdown-item" href="#">Catering</a></li>
+                            <li><a class="dropdown-item" href="#">Events</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
+                </ul>
+
+                <form class="d-flex align-items-center">
+                    <div class="search-box position-relative me-2">
+                        <i class="fa fa-search"></i>
+                        <input class="form-control" type="search" placeholder="Search destinations..." aria-label="Search" />
+                    </div>
+                    <button class="btn btn-outline-cosmic me-2" type="button">
+          <i class="fas fa-user-plus me-1"></i><a href="signup.html">Sign Up</button></a>
+                    <button class="btn btn-outline-cosmic" type="button">
+          <i class="fas fa-sign-in-alt me-1"></i> Login
+        </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Slideshow -->
+    <div id="slideshow">
+        <div class="slide active" style="background-image: url('https://source.unsplash.com/1600x500/?travel,beach');">
+            <div class="slide-caption">Explore Exotic Beaches</div>
+        </div>
+        <div class="slide" style="background-image: url('https://source.unsplash.com/1600x500/?travel,mountains');">
+            <div class="slide-caption">Discover Majestic Mountains</div>
+        </div>
+        <div class="slide" style="background-image: url('https://source.unsplash.com/1600x500/?travel,city');">
+            <div class="slide-caption">Experience Urban Adventures</div>
+        </div>
+    </div>
+
+    <!-- Offer Strap -->
+    <section id="offers" class="bg-offer text-center py-3">
+        <h4>Special Offer: Book now and get 20% off on your next trip!</h4>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="container py-5">
+        <h2 class="text-center mb-4">Our Plans</h2>
+        <div class="row mb-5">
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="https://source.unsplash.com/400x250/?beach" class="card-img-top" alt="Beach Destinations" />
+                    <div class="card-body">
+                        <h5 class="card-title">Beach Destinations</h5>
+                        <p class="card-text">Relax on the world's most sooth beaches exclusive deals.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="https://source.unsplash.com/400x250/?mountains" class="card-img-top" alt="Mountain Adventures" />
+                    <div class="card-body">
+                        <h5 class="card-title">Mountain Adventures</h5>
+                        <p class="card-text">Explore breathtaking mountain trails and thrilling hikes.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="https://source.unsplash.com/400x250/?city" class="card-img-top" alt="City Tours" />
+                    <div class="card-body">
+                        <h5 class="card-title">City Tours</h5>
+                        <p class="card-text">Experience vibrant city life with guided tours and hidden gems.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="https://source.unsplash.com/400x250/?cruise" class="card-img-top" alt="Cruise Trips" />
+                    <div class="card-body">
+                        <h5 class="card-title">Cruise Trips</h5>
+                        <p class="card-text">Set sail on luxury cruises and enjoy scenic ocean views.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="alumni-wheel mb-5">
+            <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Alumni 1" />
+            <img src="https://randomuser.me/api/portraits/men/33.jpg" alt="Alumni 2" />
+            <img src="https://randomuser.me/api/portraits/women/12.jpg" alt="Alumni 3" />
+            <img src="https://randomuser.me/api/portraits/men/54.jpg" alt="Alumni 4" />
+            <img src="https://randomuser.me/api/portraits/women/88.jpg" alt="Alumni 5" />
+            <img src="https://randomuser.me/api/portraits/men/11.jpg" alt="Alumni 6" />
+        </div>
+
+        <div class="reviews">
+            <div class="review-item active">
+                <p>"TravelSphere made my dream vacation unforgettable!"</p>
+                <div class="review-author">- Alice W.</div>
+            </div>
+            <div class="review-item">
+                <p>"Excellent service and amazing offers."</p>
+                <div class="review-author">- Mark D.</div>
+            </div>
+            <div class="review-item">
+                <p>"Highly recommend TravelSphere to all travelers."</p>
+                <div class="review-author">- Priya S.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About TravelSphere -->
+    <section id="about-travelSphere" class="py-5">
+        <h2>About TravelSphere</h2>
+        <p>TravelSphere is your trusted partner in exploring the world’s most breathtaking destinations. With expert guidance and exclusive deals, we make your travel dreams a reality. Whether you seek adventure, relaxation, or cultural immersion, TravelSphere
+            crafts personalized experiences just for you.</p>
+    </section>
+
+    <!-- Contact Form with Google Map -->
+    <!-- Contact Form Section -->
+    <section id="contact" class="py-5 bg-dark text-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Contact Us</h2>
+            <div class="row">
+                <!-- Left Column: Contact Form -->
+                <div class="col-md-6">
+                    <form id="contact-form">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Full Name *</label>
+                            <input type="text" class="form-control" id="name" required placeholder="Your full name" />
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email Address *</label>
+                            <input type="email" class="form-control" id="email" required placeholder="Your email address" />
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Phone Number *</label>
+                            <input type="tel" class="form-control" id="phone" required placeholder="+1234567890" />
+                        </div>
+                        <div class="mb-3">
+                            <label for="services" class="form-label">Service Interested In *</label>
+                            <select id="services" class="form-select" required>
+                            <option value="" disabled selected>Select a service</option>
+                            <option value="tours">Tours</option>
+                            <option value="flights">Flight Booking</option>
+                            <option value="hotels">Hotel Reservations</option>
+                            <option value="cruise">Cruise Packages</option>
+                            <option value="visa">Visa Assistance</option>
+                            <option value="custom">Custom Itinerary</option>
+                        </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Additional Information</label>
+                            <textarea id="message" class="form-control" rows="4" placeholder="Any specific requests or questions?"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-cosmic">
+                        <i class="fa fa-paper-plane me-1"></i><link rel="stylesheet" href="signup.html"> Get a Quote
+                    </button>
+                    </form>
+                </div>
+                <!-- Right Column: Google Map -->
+                <div class="col-md-6">
+                    <h5>Our Office Location</h5>
+                    <p>Office No. 466, C-Wing, 2nd Floor, Vashi Plaza, Sector-17, Vashi, Navi Mumbai, Maharashtra - 400703</p>
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe src="https://www.google.com/maps?q=Office+No.+466,+C-Wing,+2nd+Floor,+Vashi+Plaza,+Sector-17,+Vashi,+Navi+Mumbai,+Maharashtra+400703&output=embed" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp Chat Button -->
+    <a href="https://wa.me/1234567890" target="_blank" id="whatsapp-chat">
+        <i class="fab fa-whatsapp fa-lg"></i>
+    </a>
+
+    <!-- Floating Chatbot Button -->
+    <div id="chatbot-btn">
+        <i class="fas fa-robot fa-lg"></i>
+    </div>
+
+    <div id="chatbot-btn">
+        <i class="fas fa-robot fa-lg"></i>
+    </div>
+
+    <!-- Chatbot Modal -->
+    <div id="chatbot-modal">
+        <div id="chatbot-header">
+            <span>TravelBot</span>
+            <button id="chatbot-close">&times;</button>
+        </div>
+        <div id="chatbot-messages">
+            <div class="bot-msg">Hello! How can I help you today?</div>
+        </div>
+        <div id="chatbot-input-container" class="d-flex">
+            <input type="text" id="chatbot-input" placeholder="Type a message..." class="form-control" />
+            <button id="chatbot-send" class="btn btn-outline-cosmic ms-2">Send</button>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-4 mt-5">
+        <div class="container">
+            <div class="row">
+
+                <!-- About -->
+                <div class="col-md-4 mb-3">
+                    <h5 class="text-info">TravelSphere</h5>
+                    <p>Your trusted partner in exploring the world’s most breathtaking destinations. Adventure, relaxation, and culture—crafted just for you.</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-md-4 mb-3">
+                    <h5 class="text-info">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="home.html" class="text-light text-decoration-none">Home</a></li>
+                        <li><a href="about.html" class="text-light text-decoration-none">About</a></li>
+                        <li><a href="#contact" class="text-light text-decoration-none">Contact</a></li>
+                        <li><a href="signup.html" class="text-light text-decoration-none">Sign Up</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="col-md-4 mb-3">
+                    <h5 class="text-info">Contact Us</h5>
+                    <p><i class="fas fa-map-marker-alt me-2"></i>Office No. 466, C-Wing, 2nd Floor, Vashi Plaza, Sector-17, Vashi, Navi Mumbai, Maharashtra - 400703</p>
+                    <p><i class="fas fa-phone me-2"></i>+91 1234567890</p>
+                    <p><i class="fas fa-envelope me-2"></i>info@travelsphere.com</p>
+                    <div>
+                        <a href="#" class="text-light me-2"><i class="fab fa-facebook fa-lg"></i></a>
+                        <a href="#" class="text-light me-2"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="#" class="text-light me-2"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a href="#" class="text-light"><i class="fab fa-linkedin fa-lg"></i></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <hr style="border-color: #00ffe0;">
+            <div class="text-center mt-3">
+                <small>&copy; 2025 TravelSphere. All rights reserved.</small>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- External JS -->
+    <script src="scripts.js"></script>
+</body>
+
+</html>
